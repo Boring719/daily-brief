@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日国际简报 · 存档</title><style>:root { color-scheme: light dark; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f6f2e9;
+  color: #1c1a17;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 30px 22px 90px; }
+
+.masthead { border-top: 4px solid #1c1a17; padding-top: 14px; }
+.kicker { font-size: 10px; letter-spacing: .3em; color: #8a8378; }
+.masthead h1 {
+  font-family: "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC", Georgia, serif;
+  font-size: 40px; letter-spacing: .08em; margin: 8px 0 10px; font-weight: 700;
+}
+.dateline { font-size: 13px; color: #6d675e; letter-spacing: .04em; }
+.dateline .sep { margin: 0 8px; color: #b9b0a0; }
+
+.lede {
+  font-family: "Songti SC", "Source Han Serif SC", Georgia, serif;
+  font-size: 19px; line-height: 1.9; color: #2b2823;
+  border-left: 3px solid #a63a2b; padding-left: 16px; margin: 26px 0 32px;
+}
+
+.top3 { background: #efe9dc; padding: 22px 24px 12px; margin-bottom: 36px; }
+.sec-label { font-size: 11px; letter-spacing: .24em; color: #7a7264; }
+.top3 ol { list-style: none; margin: 12px 0 0; padding: 0; }
+.top3 li { display: flex; gap: 14px; padding: 14px 0; border-top: 1px solid #ded6c6; }
+.top3 li:first-child { border-top: 0; padding-top: 4px; }
+.num {
+  font-family: Georgia, serif; font-size: 26px; line-height: 1; color: #a63a2b;
+  min-width: 22px;
+}
+.top3 h3 { font-size: 16.5px; margin: 0 0 5px; line-height: 1.45; }
+.top3 p { margin: 0; font-size: 14px; color: #57514a; line-height: 1.75; }
+
+.block { margin-bottom: 38px; }
+.block h2 {
+  font-family: "Songti SC", "Source Han Serif SC", Georgia, serif;
+  font-size: 21px; letter-spacing: .1em; font-weight: 600;
+  margin: 0 0 2px; padding-bottom: 8px; border-bottom: 1px solid #1c1a17;
+}
+
+.item { padding: 18px 0 16px; border-bottom: 1px solid #e0d9cb; }
+.item-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.item h3 {
+  font-family: "Songti SC", "Source Han Serif SC", Georgia, serif;
+  font-size: 19px; line-height: 1.5; margin: 0 0 8px; font-weight: 600;
+}
+.fact { font-size: 15.5px; line-height: 1.9; color: #2a2722; margin: 0 0 8px; }
+.why {
+  font-size: 13.5px; line-height: 1.8; color: #5d564c;
+  background: #f1ecdf; padding: 8px 11px; margin: 0 0 10px;
+}
+.label { font-size: 10.5px; letter-spacing: .14em; color: #a63a2b; margin-right: 8px; font-weight: 700; }
+.note { font-size: 12.5px; color: #8a5a12; margin: 0 0 8px; }
+
+.meta {
+  font-size: 12px; color: #8a8378; display: flex; flex-wrap: wrap;
+  gap: 6px; align-items: center;
+}
+.meta a { color: #6b6255; text-decoration: none; border-bottom: 1px dotted #b9b0a0; }
+.meta a:hover { color: #a63a2b; border-color: #a63a2b; }
+.meta .dot { color: #c3bbac; }
+
+.badge {
+  font-size: 10.5px; padding: 2px 7px; border: 1px solid; border-radius: 2px;
+  white-space: nowrap; letter-spacing: .04em; flex: none;
+}
+.badge.ok { color: #2e6b4f; border-color: #bcd6c7; background: #eef5f0; }
+.badge.warn { color: #8a5a12; border-color: #e3cfa8; background: #fbf4e6; }
+.badge.single { color: #8a4a4a; border-color: #e0c3c3; background: #f8eeee; }
+
+.caveats { background: #f1ecdf; padding: 16px 18px; font-size: 13px; color: #5d564c; line-height: 1.8; }
+.caveats h4 { margin: 0 0 6px; font-size: 11px; letter-spacing: .2em; color: #7a7264; }
+.caveats ul { margin: 0; padding-left: 18px; }
+
+footer { margin-top: 44px; border-top: 1px solid #ded6c6; padding-top: 14px; }
+.history { font-size: 12px; color: #8a8378; margin-bottom: 12px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.history span { margin-right: 4px; }
+.history a { color: #6b6255; text-decoration: none; padding: 2px 7px; border: 1px solid #e0d9cb; }
+.history a.on { background: #1c1a17; color: #f6f2e9; border-color: #1c1a17; }
+.colophon { font-size: 12px; color: #8a8378; line-height: 1.8; margin: 4px 0; }
+
+.notice {
+  background: #fbf4e6; border-left: 3px solid #c98a2e; padding: 12px 16px;
+  font-size: 14px; color: #6b5a35; margin: 18px 0; line-height: 1.8;
+}
+.notice h3 { margin: 0 0 8px; font-size: 18px; color: #4a3d24; }
+
+.prog { margin: 0 0 22px; padding: 10px 0 0; }
+.prog[hidden] { display: none; }
+.prog-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  font-size: 12.5px; color: #5d564c; margin-bottom: 7px;
+}
+.prog-right { display: flex; gap: 12px; color: #8a8378; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.prog-track { height: 3px; background: #ded6c6; overflow: hidden; }
+.prog-bar {
+  height: 100%; width: 0; background: #a63a2b;
+  transition: width .5s ease; position: relative; overflow: hidden;
+}
+.prog-bar::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), transparent);
+  animation: sweep 1.3s linear infinite;
+}
+@keyframes sweep { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .prog-bar::after { animation: none; }
+  .prog-bar { transition: none; }
+}
+
+.actions { display: flex; align-items: center; gap: 12px; margin: 22px 0 10px; }
+.btn.small { font-size: 13px; padding: 7px 14px; }
+
+.archive { list-style: none; margin: 28px 0 0; padding: 0; }
+.archive li { border-bottom: 1px solid #e0d9cb; }
+.archive a { display: block; padding: 14px 2px; color: #1c1a17; text-decoration: none; }
+.archive a:hover { color: #a63a2b; }
+.idx-date { font-family: "Songti SC", Georgia, serif; font-size: 17px; letter-spacing: .02em; }
+
+.btn {
+  font-size: 15px; padding: 11px 20px; background: #1c1a17; color: #f6f2e9;
+  border: 0; border-radius: 2px; cursor: pointer; letter-spacing: .05em;
+}
+.btn:disabled { opacity: .5; cursor: default; }
+.msg { font-size: 13px; color: #6b6255; min-height: 1.4em; }
+
+@media (max-width: 600px) {
+  .wrap { padding: 18px 16px 60px; }
+  .masthead h1 { font-size: 30px; }
+  .lede { font-size: 17px; line-height: 1.85; }
+  .item h3 { font-size: 17.5px; }
+  .fact { font-size: 15px; }
+  .top3 { padding: 18px 18px 10px; }
+  .item-top { flex-direction: column; gap: 4px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #14120f; color: #e8e3d8; }
+  .masthead { border-top-color: #e8e3d8; }
+  .masthead h1, .block h2, .item h3 { color: #f0ebdf; }
+  .block h2 { border-bottom-color: #3a352c; }
+  .dateline, .kicker, .meta, .colophon, .history { color: #9a9284; }
+  .lede { color: #ddd6c7; }
+  .top3 { background: #1d1a15; }
+  .top3 li { border-top-color: #322d25; }
+  .top3 p { color: #a9a08f; }
+  .fact { color: #d9d2c3; }
+  .why, .caveats { background: #1f1b15; color: #a9a08f; }
+  .item { border-bottom-color: #2c2820; }
+  .meta a { color: #b3a996; border-bottom-color: #4a4335; }
+  .caveats h4, .sec-label { color: #8f8776; }
+  footer { border-top-color: #2c2820; }
+  .notice { background: #241c10; color: #d9c08a; }
+  .prog-row { color: #a9a08f; }
+  .prog-right { color: #8f8776; }
+  .prog-track { background: #2c2820; }
+  .btn { background: #e8e3d8; color: #14120f; }
+  .badge.ok { background: #16261d; }
+  .badge.warn { background: #2a2010; }
+  .badge.single { background: #2a1616; }
+  .history a { border-color: #322d25; color: #b3a996; }
+  .history a.on { background: #e8e3d8; color: #14120f; border-color: #e8e3d8; }
+}
+
+@media print {
+  body { background: #fff; }
+  .history, .btn { display: none; }
+}
+</style></head>
+<body><div class="wrap">
+<header class="masthead">
+<div class="kicker">DAILY WORLD BRIEF</div><h1>每日国际简报</h1>
+<div class="dateline">存档 · 共 1 期</div></header>
+<ul class="archive"><li><a href="2026-11-05.html"><span class="idx-date">2026年11月5日 星期四</span></a></li></ul>
+</div></body></html>
