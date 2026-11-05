@@ -1,0 +1,11 @@
+# 密钥绝对不能进仓库
+secrets.json
+
+# 本地数据
+data/
+logs/
+reports/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
