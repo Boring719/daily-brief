@@ -1,0 +1,295 @@
+{
+  "app_name": "每日国际简报",
+  "port": 8765,
+  "schedule_time": "08:00",
+  "window_hours": 26,
+  "fetch_deadline_seconds": 25,
+  "max_articles_per_source": 40,
+  "digest_item_count": 14,
+  "model": "deepseek-chat",
+  "api_base": "https://api.deepseek.com",
+  "sections": [
+    "美欧",
+    "中东",
+    "亚太",
+    "经济·科技",
+    "非洲·拉美"
+  ],
+  "sources": [
+    {
+      "id": "npr",
+      "name": "NPR",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "enabled": true
+    },
+    {
+      "id": "cbs",
+      "name": "CBS News",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.cbsnews.com/latest/rss/world",
+      "enabled": true
+    },
+    {
+      "id": "sky",
+      "name": "Sky News",
+      "region": "europe",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "enabled": true
+    },
+    {
+      "id": "france24",
+      "name": "France 24",
+      "region": "europe",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.france24.com/en/rss",
+      "enabled": true
+    },
+    {
+      "id": "jpost",
+      "name": "The Jerusalem Post",
+      "region": "mideast",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx",
+      "enabled": true
+    },
+    {
+      "id": "anadolu",
+      "name": "Anadolu Agency",
+      "region": "mideast",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://www.aa.com.tr/en/rss/default?cat=guncel",
+      "enabled": true
+    },
+    {
+      "id": "cna",
+      "name": "中央社",
+      "region": "asia",
+      "lang": "zh",
+      "tier": "A",
+      "url": "https://feeds.feedburner.com/rsscna/intworld",
+      "enabled": true
+    },
+    {
+      "id": "chinanews",
+      "name": "中新网",
+      "region": "asia",
+      "lang": "zh",
+      "tier": "C",
+      "url": "https://www.chinanews.com.cn/rss/world.xml",
+      "enabled": true
+    },
+    {
+      "id": "globaltimes",
+      "name": "Global Times",
+      "region": "asia",
+      "lang": "en",
+      "tier": "C",
+      "url": "https://www.globaltimes.cn/rss/outbrain.xml",
+      "enabled": false
+    },
+    {
+      "id": "yonhap",
+      "name": "Yonhap",
+      "region": "asia",
+      "lang": "ko",
+      "tier": "A",
+      "url": "https://www.yna.co.kr/rss/news.xml",
+      "enabled": false
+    },
+    {
+      "id": "cnbc",
+      "name": "CNBC",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "enabled": true
+    },
+    {
+      "id": "verge",
+      "name": "The Verge",
+      "region": "tech",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "region": "tech",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true
+    },
+    {
+      "id": "ars",
+      "name": "Ars Technica",
+      "region": "tech",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://arstechnica.com/feed/",
+      "enabled": true
+    },
+    {
+      "id": "allafrica",
+      "name": "AllAfrica",
+      "region": "africa",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+      "enabled": true
+    },
+    {
+      "id": "folha",
+      "name": "Folha de S.Paulo",
+      "region": "latam",
+      "lang": "pt",
+      "tier": "B",
+      "url": "https://feeds.folha.uol.com.br/mundo/rss.xml",
+      "enabled": true
+    },
+    {
+      "id": "batimes",
+      "name": "Buenos Aires Times",
+      "region": "latam",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://www.batimes.com.ar/feed",
+      "enabled": true
+    },
+
+    {
+      "_说明": "以下为云端专用源：国内网络打不开，但 GitHub 的服务器能访问。只在 BRIEF_PROFILE=cloud 时启用。",
+      "id": "bbc",
+      "name": "BBC News",
+      "region": "europe",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "guardian",
+      "name": "The Guardian",
+      "region": "europe",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.theguardian.com/world/rss",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "nyt",
+      "name": "The New York Times",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "aljazeera",
+      "name": "Al Jazeera",
+      "region": "mideast",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "dw",
+      "name": "Deutsche Welle",
+      "region": "europe",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "ap",
+      "name": "AP News",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://apnews.com/hub/world-news?output=rss",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "reuters",
+      "name": "Reuters",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.reutersagency.com/feed/?best-topics=world&post_type=best",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "scmp",
+      "name": "South China Morning Post",
+      "region": "asia",
+      "lang": "en",
+      "tier": "B",
+      "url": "https://www.scmp.com/rss/91/feed",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "nikkei",
+      "name": "Nikkei Asia",
+      "region": "asia",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://asia.nikkei.com/rss/feed/nar",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "straitstimes",
+      "name": "The Straits Times",
+      "region": "asia",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.straitstimes.com/news/world/rss.xml",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "wapo",
+      "name": "The Washington Post",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://feeds.washingtonpost.com/rss/world",
+      "enabled": false,
+      "cloud_only": true
+    },
+    {
+      "id": "cbc",
+      "name": "CBC News",
+      "region": "us",
+      "lang": "en",
+      "tier": "A",
+      "url": "https://www.cbc.ca/webfeed/rss/rss-world",
+      "enabled": false,
+      "cloud_only": true
+    }
+  ]
+}
